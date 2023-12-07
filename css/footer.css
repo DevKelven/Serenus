@@ -1,0 +1,111 @@
+:root{
+    /* COLORS */
+    --dark-color: linear-gradient(180deg, #36015d, black);
+    --dark-icon-color: #fff;
+    --light-color: #f7f7f7;
+    --light-color-bk: linear-gradient(180deg, #fade85, white);
+    --light-icon-color: #FFDE59;
+    --b--color: #36015d;
+    --footer:rgb(51, 51, 51);
+  }
+
+.h-footer{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 930px; 
+    border-width: 80%;
+    padding-top: 50px;
+    border-top: solid;
+    border-color: var(--b--color);
+}
+
+.email_icon, .phone_icon, .insta, .face, .linkedin{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.email-f, .tel-f{
+    display: inline-block;
+}
+
+.insta, .face, .linkedin{
+    position: relative;
+}
+
+.insta{
+    left: 70%;
+    transform: translate(-50%);
+}
+
+.face{
+    left: 72%;
+    transform: translate(-50%);
+}
+
+.linkedin{
+    left: 71%;
+    transform: translate(-50%);
+}
+
+.footer_center{
+    color: #36015d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.right_footer{
+    position: absolute;
+    top: 50%;
+    left: 92.2%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1000px) {
+    .email_icon, .phone_icon, .insta, .face, .linkedin{
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+    }
+    .right_footer{
+        position: absolute;
+        top: 50%;
+        left: 92.2%;
+        transform: translate(-50%, -50%);
+    }
+    .footer_center{
+        color: white;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .h-footer{
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: 1200px;
+        border-width: 80%;
+        padding-top: 30px;
+        padding-bottom:150px;
+        border-top: solid;
+        border-color: var(--b--color);
+        background-color: var(--footer);
+        color: white;
+    }
+    .left_footer_top{
+        position: absolute;
+        top: 60%;
+        left: 3%;
+    }
+    .left_footer_bottom{
+        position: absolute;
+        top: 40%;
+        left: 3%;
+    }
+  }

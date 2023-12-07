@@ -1,0 +1,93 @@
+.contato{
+    background-color: white;
+    height: 65%;
+    width: 55%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px;
+    border-radius: 40px;
+}
+.contato h2{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contato form {
+    display: grid;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label {
+    position: relative;
+    left: 10%;
+    transform: translate(-50%);
+}
+
+.mensagem{
+    left: 80px;
+}
+
+textarea{
+    margin: 20px;
+    max-width: 560px; 
+    max-height: 200px;
+}
+
+input{
+    margin: 20px;
+    height: 30px;
+}
+
+#enviar{
+    height: 50px;
+    width: 100px;
+    background: #36015d;
+    color: white;
+    border: 2px;
+    border-radius: 30px;
+    position: relative;
+}
+
+#enviar {
+    position: relative;
+    left: 77%;
+}
+
+@media screen and (max-width: 1000px){
+    .contato{
+        background-color: white;
+        height: 65%;
+        width: 80%;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px;
+        border-radius: 40px;
+    }
+    .contato h2{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .contato form {
+        display: grid;
+        width:90%;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #enviar{
+        position: relative;
+        left: 50%;
+    }
+}

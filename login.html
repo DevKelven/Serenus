@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS FONT ICON-->
+    <a  href="https://icons8.com/icon/357/esquerda"></a><a href="https://icons8.com"></a>
+
+    <link rel="stylesheet" href="css/login.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div id="form">
+        <form action="index.html">
+            <div class="fonte">
+                <img id="icone" width="50" height="50" src="https://img.icons8.com/ios/50/left--v1.png" alt="left--v1"/>
+            </div>
+            <h1 class="title">Login</h1>
+
+            <label form="email">Email</label>
+            <div class="input">           
+                <input type="email" placeholder="E-mail" name="" id="text">
+            </div>
+
+            <label for="passoword">Senha</label>
+            <div class="input">           
+                <input type="password" placeholder="Passaword" name="senha" id="senha">
+            </div>
+
+            <p>Ainda não tem uma conta? <a href="cadastro.html">Clique aqui para criar uma Conta</a></p>
+
+            <div id="btn">
+                <button id="logar">Login</button>
+            </div>
+        </form>
+
+    </div>
+      <!--VLIBRAS-->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+ 
+
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+   
+    <script>
+      new window.VLibras.Widget({
+          rootPah: '/app',
+          personalization: 'https://vlibras.gov.br/config/default_logo.json',
+          opacity: 0.5,
+          position: 'R',
+          avatar: 'hosana',
+      });
+    </script>
+</body>
+<script src="./js/login.js"></script>
+</html>

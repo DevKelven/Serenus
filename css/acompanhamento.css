@@ -1,0 +1,394 @@
+:root{
+    /* COLORS */
+    --dark-color: linear-gradient(180deg, #36015d, black);
+    --dark-icon-color: #fff;
+    --light-color: #f7f7f7;
+    --light-color-bk: linear-gradient(180deg, #fade85, white);
+    --light-icon-color: #FFDE59;
+    --b--color: #36015d;
+  }
+
+.dark-theme{
+    background: var(--dark-color);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body{
+  background: var(--light-color-bk);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.color a{
+    color: var(--light-color);
+}
+  
+h1,p,h2,a{
+  color: var(--b--color);
+}
+
+* {
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--b--color);
+    text-decoration: none;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
+  .paddings {
+    padding: 1.5rem;
+  }
+  
+  .innerWidth {
+    width: 100%;
+  }
+  
+  .flexCenter {
+    display: flex;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .flexStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .flexEnd {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .flexColCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .flexColStart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .flexColEnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .primaryText {
+    color: #1f3e72;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .secondaryText {
+    color: rgb(140 139 139);
+    font-size: 0.9rem;
+  }
+  .orangeText {
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .button{
+    font-weight: 500;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    transition: all 300ms ease-in;
+  }
+  
+  .button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  
+  /* media queries */
+  @media (min-width: 1536px) {
+    .innerWidth {
+      max-width: 1280px;
+      margin: auto;
+    }
+  }
+  
+  @media (min-width: 640px) {
+    .paddings {
+      padding: 4rem;
+    }
+  }
+  
+  @media (min-width: 1280px), (min-width: 768px) {
+    .paddings {
+      padding: 2rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .primaryText {
+      font-size: 1.5rem;
+    }
+    .orangeText {
+      font-size: 1.2rem;
+    }
+  }
+
+
+.color p {
+  color: var(--light-color);
+  color: #fff;
+
+} 
+
+.color h1 {
+  color: var(--light-color);
+  color: #fff;
+
+} 
+.grid-container
+{
+  display: grid;
+  grid-template-columns: 275px 420px 300px ;
+  gap: 80px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.parte1{
+    background-color: white;
+    height: 50%;
+    width: 500px;
+    border: 5px;
+    box-shadow: 10px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+hr{
+    width: 75%;
+}
+.parte1 h2{
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.parte2 h2{
+    position: relative;
+    top: 3%;
+    text-align: center;
+}
+
+.parte1 hr{
+    position: relative;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+[class^="smiley-"]{
+    position: relative;
+    left: 10%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.parte1-bottom-left{
+    background-color: white;
+    height: 60%;
+    width: 240px;
+    border: 5px;
+    box-shadow: 10px;
+    text-align: center;
+    position: absolute;
+    left: 10%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.parte1-bottom-right{
+    background-color: white;
+    height: 60%;
+    width: 240px;
+    border: 5px;
+    box-shadow: 10px;
+    text-align: center;
+    position: absolute;
+    left: 33%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.parte1-bottom-left h2{
+  position: relative;
+  top: 7%;
+  text-align: center;
+}
+
+.parte2{
+    background: white;
+    position: relative;
+    top: 58%;
+    height: 115%;
+    left:100%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.parte1 textarea{
+  border: none;
+  resize: none;
+  outline: none;
+  position: relative;
+  top: 8%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  height: 150px;
+  width: 400px;
+  margin: 20px;
+  max-width: 400px; 
+  max-height: 480px;
+}
+
+.parte2 textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    position: relative;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    height: 480px;
+    width: 400px;
+    margin: 20px;
+    max-width: 400px; 
+    max-height: 480px;
+}
+
+.imagem1
+{
+  width: 275px;
+}
+.imagem2
+{
+  width: 400px;
+}
+.imagem3
+{
+ width: 300px;
+}
+
+
+
+
+#speedometer .wrapper {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  overflow: hidden;
+  position: relative;
+  top: 145px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#speedometer .wrapper .indicator-wrapper {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  width: 80%;
+  height: 80%;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  background-color: #ffffff;
+  z-index: 400;
+}
+
+#speedometer .wrapper .bar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: bottom center;
+}
+
+#speedometer .wrapper .bar-1 {
+  top: 0;
+  left: 0;
+  z-index: 200;
+  transform: rotate(-140deg);
+  background-color: #a9db7a;
+}
+
+#speedometer .wrapper .bar-2 {
+  top: 0;
+  right: 0;
+  z-index: 150;
+  transform: rotate(-90deg);
+  background-color: #9ed1e1;
+}
+
+#speedometer .wrapper .bar-3 {
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform: rotate(-40deg);
+  background-color: #eed16a;
+}
+
+#speedometer .wrapper .bar-4 {
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transform: rotate(30deg);
+  background-color: #d96065;
+}
+
+#speedometer .needle {
+  background-image: url("https://svgshare.com/i/GBP.svg");
+  background-repeat: no-repeat;
+  z-index: 999999;
+  width: 200px;
+  height: 110px;
+  display: inline-block;
+  left: 50%;
+  position: absolute;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  bottom: 5px;
+  animation:
+  change 3s linear,
+    loop 1s linear 3s infinite alternate;
+  transform-origin:50% calc(100% - 8px) ;
+}
+
+.parte1-bottom-right h2{
+  position: relative;
+  top: 7%;
+  text-align: center;
+}
+
+
