@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="/imagens/logo_branca.png" type="image/x-icon" />
+    <title>Contato</title>
+</head>
+<body>
+    <header id="header" class="h-wrapper">
+        <div class="flexCenter paddings innerWidth h-container">
+            <img id="logo" src="imagens/logo_colorida.png" alt="logo" />
+            
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+            <div class="flexCenter h-menu nav-list">
+                <a href="index.html">Inicio</a>
+                <a href="exercicios.html">Exercícios</a>
+                <a href="Informacoes.html">Informações</a>
+                <strong><a href="contato.html">Contato</a></strong>
+                <a href="login.html"><p id="perfil">Entrar na conta</p></a>
+            </div>     
+            <img id="icon" src="icons/moon.png" alt="moon">
+        </div>
+    </header>
+
+    <main>
+        <div id="form">
+            <form action="">
+                <h2>Entre em Contato</h2> 
+                <label form="nome">Nome:</label>
+                <div class="input">           
+                    <input type="text" placeholder="Nome" name="nome" id="text">
+                </div>
+
+                <label form="email">Email:</label>
+                <div class="input">           
+                    <input type="email" placeholder="E-mail" name="email" id="text">
+                </div>
+    
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" cols="50" rows="10" placeholder="Digite a sua mensagem aqui!" style="resize: none"></textarea>
+                <div id="btn">
+                    <input type="submit" value="Enviar" id="logar">
+                </div>
+            </form>
+    </main>
+
+    <footer>
+        <div class="h-footer">
+            <section class="left_footer_top">
+                <p class="email-f">Oficial@serenus.com.br</p>
+                <img src="icons/email.png" alt="email" class="email_icon">
+            </section>
+            <section class="left_footer_bottom">
+                <p class="tel-f">16 9 9999 9999</p>
+                <img src="icons/telephone.png" alt="telefone" class="phone_icon">
+            </section>
+    
+            <section class="footer_center">
+                <p>Criado e desenvolvido por Serenus Group</p>
+            </section>
+    
+            <section class="right_footer">
+                <img src="icons/insta.png" alt="instagram" class="insta">
+                <img src="icons/face.png" alt="facebook" class="face">
+                <img src="icons/din.png" alt="linkedin" class="linkedin">
+            </section>
+        </div>
+    </footer>
+  <!--VLIBRAS-->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+ 
+
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+   
+    <script>
+      new window.VLibras.Widget({
+          rootPah: '/app',
+          personalization: 'https://vlibras.gov.br/config/default_logo.json',
+          opacity: 0.5,
+          position: 'R',
+          avatar: 'hosana',
+      });
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+</body
