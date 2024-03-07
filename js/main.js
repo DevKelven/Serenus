@@ -70,6 +70,10 @@ cadastro.onclick = function(){
     location.href = "cadastro.html"
 }
 
+
+
+
+
 // function verificarLargura() {
 //     const circulo = document.querySelector('.circle');
 //     const borda = document.querySelector('.border');

@@ -5,7 +5,7 @@
     --light-color: #f7f7f7;
     --light-color-bk: linear-gradient(180deg, #22abd4, rgb(167, 218, 241));
     --light-icon-color: #FFDE59;
-    --b--color: #291f30;
+    --b--color: #402650;
   }
 
 .dark-theme{
@@ -19,6 +19,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 body{
   background: var(--light-color-bk);
   background-repeat: no-repeat;
@@ -37,10 +38,7 @@ body{
     color: var(--light-color);
 }
 
-/*.color label{
-  color: var(--light-color);
-}*/
-  
+
 * {
    margin: 0;
     padding: 0;
@@ -55,10 +53,12 @@ a {
 }
 
 strong:hover,
-a:hover{
+.image-feliz:hover ,.image-triste:hover{
   font-weight: bold;
   border-bottom: 2px solid #0f0f10;
 }
+
+
 
 label{
   color: var(--b--color);
@@ -337,5 +337,86 @@ label{
   }
   50% {
     transform: translateY(-10%);
+  }
+}
+
+
+
+ /* Footer */
+
+.h-footer{
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 930px; 
+  border-width: 80%;
+  padding-top: 50px;
+  border-top: solid;
+  border-color: var(--b--color);
+}
+
+.email_icon, .phone_icon, .insta, .face, .linkedin{
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.email-f, .tel-f{
+  display: inline-block;
+}
+
+.insta, .face, .linkedin{
+  position: relative;
+}
+
+.insta{
+  left: 70%;
+  transform: translate(-50%);
+}
+
+.face{
+  left: 72%;
+  transform: translate(-50%);
+}
+
+.linkedin{
+  left: 71%;
+  transform: translate(-50%);
+}
+
+.footer_center{
+  color: #25043d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right_footer{
+  position: absolute;
+  top: 50%;
+  left: 92.2%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1000px) {
+  .email_icon, .phone_icon, .insta, .face, .linkedin{
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+  }
+  .right_footer{
+      position: absolute;
+      top: 50%;
+      left: 92.2%;
+      transform: translate(-50%, -50%);
+  }
+  .footer_center{
+      color: rgb(47, 8, 51);
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
 }

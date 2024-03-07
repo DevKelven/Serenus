@@ -1,11 +1,9 @@
 :root{
-    /* COLORS */
-    --dark-color: linear-gradient(180deg, #36015d, black);
-    --dark-icon-color: #fff;
-    --light-color: #f7f7f7;
-    --light-icon-color: #FFDE59;
-    --b--color: #36015d;
-  }
+  /* COLORS */
+  --dark-color: linear-gradient(180deg, #36015d, black);
+  --light-color-bk: linear-gradient(180deg, #22abd4, rgb(167, 218, 241));
+}
+
 .h-wrapper{
     color: black
 }
