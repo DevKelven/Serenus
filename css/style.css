@@ -400,6 +400,8 @@ label{
   transform: translate(-50%, -50%);
 }
 
+
+/* Tela pequena */
 @media (max-width: 1000px) {
   .email_icon, .phone_icon, .insta, .face, .linkedin{
       width: 30px;
@@ -418,5 +420,34 @@ label{
       top: 15%;
       left: 50%;
       transform: translate(-50%, -50%);
+  }
+}
+
+/* Tela grande */
+@media(min-width:1366px){
+  .h-footer{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 1100px; 
+    border-width: 80%;
+    padding-top: 50px;
+    border-top: solid;
+    border-color: var(--b--color);
+  }
+}
+
+@media(max-width:420px){
+  .h-footer{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 1200px; 
+    border-width: 80%;
+    padding-top: 50px;
+    border-top: solid;
+    border-color: var(--b--color);
   }
 }

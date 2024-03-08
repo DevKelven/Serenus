@@ -277,51 +277,63 @@ a:hover{
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 1000px) {
-  .email_icon, .phone_icon, .insta, .face, .linkedin{
-      width: 30px;
-      height: 30px;
-      vertical-align: middle;
-  }
-  .right_footer{
-      position: absolute;
-      top: 50%;
-      left: 92.2%;
-      transform: translate(-50%, -50%);
-  }
-  .footer_center{
-      color: white;
-      position: absolute;
-      top: 15%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  }
+/* Tela grande */
+@media (min-width:1366px ){
   .h-footer{
-      width: 100%;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%);
-      top:400%;
-      border-width: 100%;
-      padding-top: 70px;
-      padding-bottom:150px;
-      border-top: solid;
-      border-color: var(--b--color);
-      background-color: var(--footer);
-      color: white;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 1300px; 
+    border-width: 80%;
+    padding-top: 50px;
+    border-top: solid;
+    border-color: var(--b--color);
   }
-  .left_footer_top{
-      position: absolute;
-      top: 60%;
-      left: 3%;
-  }
-  .left_footer_bottom{
-      position: absolute;
-      top: 40%;
-      left: 3%;
-  }
-  .h-footer p{
-    color: white;
-  }
+
 }
 
+/* Tela pequena-Mobile */
+@media(max-width:420px){
+  .email_icon, .phone_icon, .insta, .face, .linkedin{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+.right_footer{
+    position: absolute;
+    top: 50%;
+    left: 92.2%;
+    transform: translate(-50%, -50%);
+}
+.footer_center{
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.h-footer{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 2400px;
+    border-width: 100%;
+    padding-top: 70px;
+    padding-bottom:150px;
+    border-top: solid;
+    border-color: var(--b--color);
+    color: white;
+}
+.left_footer_top{
+    position: absolute;
+    top: 60%;
+    left: 3%;
+}
+.left_footer_bottom{
+    position: absolute;
+    top: 40%;
+    left: 3%;
+}
+} 
