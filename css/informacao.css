@@ -41,16 +41,14 @@ a {
     text-decoration: none;
 }
 
-a:hover{
-  font-weight: bold;
-}
- 
+
   .flexCenter {
     display: flex;
     row-gap: 2rem;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0px 190px;
   }
   .flexStart {
     display: flex;
@@ -108,7 +106,6 @@ a:hover{
   
   .button:hover{
     cursor: pointer;
-    transform: scale(1.1);
   }
  .color h2 {
   color: var(--light-color);

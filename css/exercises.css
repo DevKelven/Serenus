@@ -33,14 +33,12 @@ main p{
     height: 320px;
     border-radius: 50%;
     background: linear-gradient(45deg, #c594ee 60%, #c9d9df);
-    animation: animation 10s linear infinite;
-    animation-delay:5.1ms;
+    animation: animation 7.4s linear infinite;
 }
 
 .inspire_expire::after{
     content: "";
-	animation: spin 8s infinite;
-    animation-delay:4ms;
+	  animation: spin 7.4s infinite;
 }
 
 .border{
