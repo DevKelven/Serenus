@@ -29,6 +29,20 @@
     cursor: pointer;
 }
 
+.mobile-menu2 div{
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.mobile-menu2 {
+  display: none;
+  cursor: pointer;
+}
+
+
 #logo{
     width: 170px;
 }
@@ -123,6 +137,19 @@ nav {
     body {
       overflow-x: hidden;
     }
+
+    .mobile-menu2 div{
+      width: 32px;
+      height: 2px;
+      background: #fff;
+      margin: 8px;
+      transition: 0.3s;
+    }
+    
+    .mobile-menu2 {
+      display: block;
+    }
+
     .nav-list {
       position: absolute;
       top: 8vh;
@@ -180,5 +207,17 @@ nav {
   }
   
   .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  .mobile-menu2.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu2.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu2.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }

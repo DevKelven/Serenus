@@ -2,47 +2,83 @@
 
 
 class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
-      this.mobileMenu = document.querySelector(mobileMenu);
-      this.navList = document.querySelector(navList);
-      this.navLinks = document.querySelectorAll(navLinks);
-      this.activeClass = "active";
+  constructor(mobileMenu, navList, navLinks, mobileMenu2) {
+    this.mobileMenu = document.querySelector(mobileMenu);
+    this.mobileMenu2 = document.querySelector(mobileMenu2);
+    this.navList = document.querySelector(navList);
+    this.navLinks = document.querySelectorAll(navLinks);
+    this.activeClass = "active";
+    this.activeClass2 = "active";
+    this.handleClick2 = this.handleClick2.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+//navlinks é um metodo padrão para pegar os links
+
+  animateLinks() {
+    this.navLinks.forEach((link, index) => {
+      link.style.animation
+        ? (link.style.animation = "")
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 7 + 0.3
+          }s`);
+    });
+  }
+
+  animateLinks2() {
+    this.navLinks.forEach((link, index) => {
+      link.style.animation
+        ? (link.style.animation = "")
+        : (link.style.animation = `navLinkFade 0.5s ease backwards ${
+            index / 7 + 0.3
+          }s`);
+    });
+  }
+
+  handleClick() {
+    this.navList.classList.toggle(this.activeClass);
+    this.mobileMenu.classList.toggle(this.activeClass);
+    this.animateLinks();
+  }
   
-      this.handleClick = this.handleClick.bind(this);
+  handleClick2() {
+    this.navList.classList.toggle(this.activeClass2);
+    this.mobileMenu2.classList.toggle(this.activeClass2);
+    this.animateLinks2();
+  }
+
+  addClickEvent() {
+    this.mobileMenu.addEventListener("click", this.handleClick);
+  }
+
+  addClickEvent2() {
+    this.mobileMenu2.addEventListener("click", this.handleClick2);
+  }
+
+  init() {
+    if (this.mobileMenu) {
+      this.addClickEvent();
     }
-  
-    animateLinks() {
-      this.navLinks.forEach((link, index) => {
-        link.style.animation
-          ? (link.style.animation = "")
-          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-              index / 7 + 0.3
-            }s`);
-      });
-    }
-  
-    handleClick() {
-      this.navList.classList.toggle(this.activeClass);
-      this.mobileMenu.classList.toggle(this.activeClass);
-      this.animateLinks();
-    }
-  
-    addClickEvent() {
-      this.mobileMenu.addEventListener("click", this.handleClick);
-    }
-  
-    init() {
-      if (this.mobileMenu) {
-        this.addClickEvent();
-      }
+    return this;
+  }
+  init2(){
+    if(this.mobileMenu2) {
+      this.addClickEvent();
       return this;
     }
   }
-  
-  const mobileNavbar = new MobileNavbar(
-    ".mobile-menu",
-    ".nav-list",
-    ".nav-list li",
-  );
-  mobileNavbar.init();
+}
+    const mobileNavbar = new MobileNavbar(
+      ".mobile-menu",
+      ".nav-list",
+      ".nav-list li",
+    );
+    mobileNavbar.init();
+    
+    const mobileNavbar2 = new MobileNavbar(
+      ".mobile-menu2",
+      ".nav-list",
+      ".anv-list li",
+    );
+    mobileNavbar2.init();
 
